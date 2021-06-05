@@ -22,7 +22,7 @@ import com.how2java.springboot.service.HeroService;
 @RestController
 public class HeroController {
 	@Autowired HeroService heroService;
-	
+	//更改项目版本为2.0，实际未做修改，
 	/*restful 部分*/
     @GetMapping("/heroes")
     public PageInfo<Hero> list(@RequestParam(value = "start", defaultValue = "1") int start,@RequestParam(value = "size", defaultValue = "5") int size) throws Exception {
